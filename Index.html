@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingNest | Student List Assignment</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js"
+        integrity="sha512-v8+bPcpk4Sj7CKB11+gK/FnsbgQ15jTwZamnBf/xDmiQDcgOIYufBo6Acu1y30vrk8gg5su4x0CG3zfPaq5Fcg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Css File  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon link  -->
+    <link rel="shortcut icon" href="Favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!-- Form to Add Students -->
+        <div class="form-box">
+            <h2>Add Student</h2>
+            <form id="form-box">
+                <div class="input-groups">
+                    <label for="roll">Roll No:</label>
+                    <input type="number" id="rollno" placeholder="Enter Roll No">
+                </div>
+                <div class="input-groups">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" placeholder="Enter First Name">
+                </div>
+                <div class="input-groups">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" placeholder="Enter Last Name">
+                </div>
+                <div class="input-groups">
+                    <label for="course">Course:</label>
+                    <input type="text" id="course" placeholder="Enter Course">
+                </div>
+                <div class="input-groups">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter Email">
+                </div>
+                <button id="btn">Add Student</button>
+                <div class="spinner">Loading...</div>
+            </form>
+        </div>
+
+        <!-- List of Students -->
+        <div class="student-list">
+            <h2>Student List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll No <button class="filter-btn">▼</button>
+                            <div class="filter-dropdown" data-column="rollNo"></div>
+                        </th>
+                        <th>First Name <button class="filter-btn">▼</button>
+                            <div class="filter-dropdown" data-column="firstName"></div>
+                        </th>
+                        <th>Last Name <button class="filter-btn">▼</button>
+                            <div class="filter-dropdown" data-column="lastName"></div>
+                        </th>
+                        <th>Course <button class="filter-btn">▼</button>
+                            <div class="filter-dropdown" data-column="course"></div>
+                        </th>
+                        <th>Email <button class="filter-btn">▼</button>
+                            <div class="filter-dropdown" data-column="email"></div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="student-tbody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Script File  -->
+    <script src="Script.js"></script>
+</body>
+
+</html>

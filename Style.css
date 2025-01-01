@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        .form-box,
+        .student-list {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .input-groups {
+            margin-bottom: 15px;
+        }
+
+        .input-groups label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-groups input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        .spinner {
+            display: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead th {
+            position: relative;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        tbody td {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .filter-dropdown {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            z-index: 10;
+            display: none;
+            width: 100%;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .filter-dropdown label {
+            display: block;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .filter-dropdown label:hover {
+            background-color: #f1f1f1;
+        }
+
+        .filter-dropdown input[type="checkbox"] {
+            margin-right: 5px;
+        }
