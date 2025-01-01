@@ -104,6 +104,8 @@
             display: block;
             padding: 5px 10px;
             cursor: pointer;
+            font-weight: normal;
+            color: black;
         }
 
         .filter-dropdown label:hover {
